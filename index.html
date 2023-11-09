@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicación de Detección de Desechos Sólidos</title>
+</head>
+<body>
+    <h1>Bienvenido a la Aplicación de Detección de Desechos Sólidos</h1>
+    <p>Utiliza esta aplicación para notificar la ubicación de los desechos sólidos y ayudar a mantener nuestra comunidad limpia.</p>
+    
+    <h2>Notificar Desechos Sólidos</h2>
+    <form action="/notificar_basura" method="post">
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion" required>
+        <br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
+        <br>
+        <button type="submit">Notificar</button>
+    </form>
+    
+
+    <h2>Ver en el Mapa</h2>
+    <a href="map.html">Ver la ubicación de los desechos sólidos en el mapa</a>
+
+</body>
+</html>

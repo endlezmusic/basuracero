@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Flask App",
+            "type": "shell",
+            "command": "__main__",  // Asegúrate de que esto coincida con tu comando para ejecutar Flask
+            "args": ["basuracero.py"],  // Reemplaza con el nombre de tu archivo Python principal
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

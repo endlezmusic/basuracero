@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa de Desechos Sólidos</title>
+    <style>
+        /* Estilos CSS para el mapa (puedes personalizarlos) */
+        #map {
+            height: 2436px;
+            width: 1125px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mapa de Desechos Sólidos</h1>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 18.9418614, lng: -70.4113283},
+                zoom: 14
+            });
+
+            var locations = [
+                {"lat": 18.9166700, "lng": -70.4666700},  // Ejemplo de una ubicación en San Francisco
+                // Agrega más ubicaciones aquí
+            ];
+
+            locations.forEach(function(location) {
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    title: 'Desecho Sólido'
+                });
+            });
+        }
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdUKLIBeap8kfQlJLyLC2HgsPdgy95Res&callback=initMap">
+    </script>
+</body>
+</html>
